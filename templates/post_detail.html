@@ -48,7 +48,7 @@
                             </form>
                             {% else %}
                             <span class="text-secondary"><i class="far fa-heart"></i></span>
-                            {% endif %}<span> {{ post.number_of_likes }}</span></strong>
+                            {% endif %}<span class="text-secondary"> {{ post.number_of_likes }}</span></strong>
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
