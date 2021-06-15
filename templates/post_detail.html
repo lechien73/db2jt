@@ -42,13 +42,13 @@
                                 <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
                                         class="fas fa-heart"></i></button>
                                 {% else %}
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}"
-                                    class="btn-like"><strong><i class="far fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+                                        class="far fa-heart"></i></button>
                                 {% endif %}
                             </form>
                             {% else %}
-                            <span class="text-secondary"><i class="far fa-heart"></i>
-                                {% endif %} {{ post.number_of_likes }} </strong>
+                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+                            {% endif %}<span> {{ post.number_of_likes }}</span></strong>
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
